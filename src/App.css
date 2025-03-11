@@ -19,6 +19,7 @@ ul {
 
 li {
   margin-right: 16px;
+  border: white solid 1px;
 }
 
 .mail-box {
@@ -45,5 +46,10 @@ textarea {
 
 button {
   background-color: #535bf2;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
 }
 

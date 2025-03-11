@@ -25,7 +25,7 @@ DONE As a user, when I submit a the ‘New Mailbox’ form, I should be redirect
 
 DONE As a user, clicking on the ‘Mailboxes’ link should navigate me to a ‘Mailboxes’ page.
 
-As a user, when viewing the ‘Mailboxes’ page, I should be able to see a list of all the existing mailboxes. Each mailbox in the list should be a square container with a box number _id.
+DONE As a user, when viewing the ‘Mailboxes’ page, I should be able to see a list of all the existing mailboxes. Each mailbox in the list should be a square container with a box number _id.
 
 As a user, when viewing the ‘Mailboxes’ list page, I want to be able to click on a mailbox, and be directed to a mailbox details page.
 

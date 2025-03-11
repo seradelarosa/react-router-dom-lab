@@ -3,7 +3,7 @@ import NavBar from './components/NavBar/NavBar.jsx';
 import { Route, Routes } from 'react-router';
 import MailboxForm from './components/MailboxForm/MailboxForm.jsx';
 import MailboxList from './components/MailboxList/MailboxList.jsx';
-import { useEffect } from 'react';
+import '../src/App.css';
 
 const initialState = {
   _id: 0,
@@ -24,11 +24,6 @@ const App = () => {
         { ...formData, _id: prevMailboxes.length + 1 }
     ]);
 };
-
-  // Log the updated mailboxes array whenever it changes
-  useEffect(() => {
-    console.log("Updated mailboxes:", mailboxes);
-  }, [mailboxes]);
 
   return (
     <>
