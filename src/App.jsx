@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router';
 import MailboxForm from './components/MailboxForm/MailboxForm.jsx';
 import MailboxList from './components/MailboxList/MailboxList.jsx';
 import '../src/App.css';
+import MailboxDetails from './components/MailboxDetails/MailboxDetails.jsx';
 
 const initialState = {
   _id: 0,
@@ -34,6 +35,7 @@ const App = () => {
       <Route path='/mailboxes' element={ <MailboxList mailboxes={mailboxes} /> }/>
       {/* passing the add mailbox function and initial state into the form element */}
       <Route path='new-mailbox' element={ <MailboxForm addMailbox={addMailbox} initialState={initialState} /> } />
+      <Route path='/mailboxes/:id' element={ <MailboxDetails mailboxes={mailboxes}/> }/>
       {/* catch-all default route */}
       <Route path="*" element={<h2>Whoops, nothing here!</h2>} />
     </Routes>

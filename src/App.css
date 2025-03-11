@@ -20,6 +20,7 @@ ul {
 li {
   margin-right: 16px;
   border: white solid 1px;
+  padding: 10px;
 }
 
 .mail-box {
