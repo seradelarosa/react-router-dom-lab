@@ -2,12 +2,13 @@ import { useState } from 'react';
 import Select from 'react-select';
 
 
-const MailboxForm = (props) => {
+const MailboxForm = ( props ) => {
     console.log(props);
     const initialState = props.initialState;
     const [formData, setFormData] = useState(initialState);
 
     const handleSubmit = (event) => {
+        console.log(formData);
         // prevent page refresh
         event.preventDefault();
         // pass formData into the addMailbox function
@@ -45,9 +46,9 @@ const MailboxForm = (props) => {
                 value={formData.boxSize}
                 onChange={handleChange}
                 >
-                    <option>Small</option>
-                    <option>Medium</option>
-                    <option>Large</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
                 </select>
 
                 <button type="submit">Submit</button>

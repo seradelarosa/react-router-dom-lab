@@ -19,11 +19,11 @@ DONE As a user, clicking on the ‘New Mailbox’ link should navigate me to a p
 
 DONE As a user, when viewing the form on the ‘New Mailbox’ page, I should see a <form> with an <input> for the name of the boxOwner and a <select> menu for the boxSize. The <select> menu should include three options: ‘Small’, ‘Medium’, and ‘Large’.
 
-As a user, I should not be required to select a box number when creating a new mailbox. When a new mailbox is created, it should be assigned a box number, or _id, automatically. This number should increment based on the number of mailboxes that already exist.
+DONE As a user, I should not be required to select a box number when creating a new mailbox. When a new mailbox is created, it should be assigned a box number, or _id, automatically. This number should increment based on the number of mailboxes that already exist.
 
-As a user, when I submit a the ‘New Mailbox’ form, I should be redirected to the ‘Mailboxes’ page (/mailboxes) where I will see the newly created mailbox added to the list.
+DONE As a user, when I submit a the ‘New Mailbox’ form, I should be redirected to the ‘Mailboxes’ page (/mailboxes) where I will see the newly created mailbox added to the list.
 
-As a user, clicking on the ‘Mailboxes’ link should navigate me to a ‘Mailboxes’ page.
+DONE As a user, clicking on the ‘Mailboxes’ link should navigate me to a ‘Mailboxes’ page.
 
 As a user, when viewing the ‘Mailboxes’ page, I should be able to see a list of all the existing mailboxes. Each mailbox in the list should be a square container with a box number _id.
 
