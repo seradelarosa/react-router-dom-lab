@@ -14,7 +14,7 @@ const MailboxDetails = ({mailboxes}) => {
     }
 
     return (
-        <div>
+        <div className="mail-box">
             <h1>Mailbox Details</h1>
             <h3>Mailbox ID: {mailbox._id}</h3>
             <p>Owner: {mailbox.boxOwner}</p>
