@@ -14,8 +14,8 @@ const MailboxList = ({ mailboxes }) => {
                             <Link to={`/mailboxes/${mailbox._id}`}>
                             <h3>Mailbox {mailbox._id}</h3>
                             </Link>
-                            <p>Mailbox owner: {mailbox.boxOwner}</p>
-                            <p>Mailbox size: {mailbox.boxSize}</p>
+                            {/* <p>Mailbox owner: {mailbox.boxOwner}</p>
+                            <p>Mailbox size: {mailbox.boxSize}</p> */}
                         </li>
                     );
                 })}
