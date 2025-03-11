@@ -1,7 +1,16 @@
-// src/App.jsx
+import { useState } from 'react';
+import NavBar from './components/NavBar/NavBar.jsx';
 
 const App = () => {
-  return <h1>Hello world!</h1>;
+  const [mailboxes, setMailboxes] = useState([]);
+
+
+  return (
+    <>
+    <NavBar />
+    <h1>Sera's Post Office Company Intl.</h1>
+    </>
+  )
 };
 
 export default App;
