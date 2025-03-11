@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import Select from 'react-select';
-
+//for redirect
+import { useNavigate } from "react-router-dom";
 
 const MailboxForm = ( props ) => {
     console.log(props);
     const initialState = props.initialState;
     const [formData, setFormData] = useState(initialState);
+    const navigate = useNavigate();
 
     const handleSubmit = (event) => {
         console.log(formData);
@@ -15,6 +17,8 @@ const MailboxForm = ( props ) => {
         props.addMailbox(formData);
         // reset form to initial state so user can submit another mailbox
         setFormData(initialState);
+
+        navigate("/mailboxes");
     };
     
     const handleChange = ({ target }) => {
